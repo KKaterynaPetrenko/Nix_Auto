@@ -1,6 +1,7 @@
 package ua.com.alevel;
 
 import ua.com.alevel.HWString.StringTask;
+import ua.com.alevel.cipherTask.CipherGame;
 import ua.com.alevel.task1.Task1;
 import ua.com.alevel.task2.Task2;
 import ua.com.alevel.task3.Task3;
@@ -29,6 +30,9 @@ public class ProgramRun {
                     case "4" : {
                         new StringTask().run(reader);
                     } break;
+                    case "5" : {
+                        new CipherGame().Run(reader);
+                    } break;
                     case "0" : {
                         System.exit(0);
                     } break;
@@ -44,6 +48,7 @@ public class ProgramRun {
         System.out.println("if you need second task, please select 2");
         System.out.println("if you need 3 task, please select 3");
         System.out.println("if you need 4 task, please select 4");
+        System.out.println("if you need 5 task, please select 5");
         System.out.println("if you need exit task, please select 0");
         System.out.println("Select you event:");
         System.out.println();
