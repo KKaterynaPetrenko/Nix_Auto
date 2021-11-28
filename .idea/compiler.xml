@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="NIX_KateP_HW" />
         <module name="Nix_Auto" />
+        <module name="bill_tracker" />
       </profile>
     </annotationProcessing>
   </component>
