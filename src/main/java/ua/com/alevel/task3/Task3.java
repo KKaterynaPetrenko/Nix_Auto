@@ -4,11 +4,13 @@ import java.io.BufferedReader;
 import java.util.Scanner;
 
 public class Task3 {
+
     public void run(BufferedReader reader) {
         System.out.println("Task3.run");
-        Task3();
+        task3();
     }
-    public static void Task3() {
+
+    public static void task3() {
         Scanner console = new Scanner(System.in);
         System.out.println("Please, input lesson number:");
         String input = console.nextLine();

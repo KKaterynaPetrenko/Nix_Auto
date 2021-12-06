@@ -6,11 +6,13 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Task2 {
+
     public void run(BufferedReader reader) {
         System.out.println("Task2.run");
-        Task2();
+        task2();
     }
-    public static void Task2() {
+
+    public static void task2() {
         Scanner console = new Scanner(System.in);
         System.out.println("Please, input word: ");
         String name = console.nextLine();
@@ -24,22 +26,21 @@ public class Task2 {
         }
 
         var charByCount = new HashMap<Character, Integer>();
-        for (var i: alphabeticSymbols) {
+        for (var i : alphabeticSymbols) {
             if (charByCount.containsKey(i)) {
                 charByCount.replace(i, charByCount.get(i) + 1);
-            }
-            else {
+            } else {
                 charByCount.put(i, 1);
             }
         }
 
         var pairs = new ArrayList<>(charByCount.entrySet());
-        for (int i = 0; i < pairs.size()-1; i++)
-            for (int j = 0; j < pairs.size()-i-1; j++)
-                if (pairs.get(j).getValue() < pairs.get(j+1).getValue()) {
+        for (int i = 0; i < pairs.size() - 1; i++)
+            for (int j = 0; j < pairs.size() - i - 1; j++)
+                if (pairs.get(j).getValue() < pairs.get(j + 1).getValue()) {
                     var temp = pairs.get(j);
-                    pairs.set(j, pairs.get(j+1));
-                    pairs.set(j+1, temp);
+                    pairs.set(j, pairs.get(j + 1));
+                    pairs.set(j + 1, temp);
                 }
 
         for (var i = 0; i < pairs.size(); i++) {

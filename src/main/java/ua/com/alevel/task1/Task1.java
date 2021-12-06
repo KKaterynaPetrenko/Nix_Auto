@@ -4,11 +4,13 @@ import java.io.BufferedReader;
 import java.util.Scanner;
 
 public class Task1 {
+
     public void run(BufferedReader reader) {
         System.out.println("Task1.run");
-        Task1();
+        task1();
     }
-    public static void Task1() {
+
+    public static void task1() {
         Scanner console = new Scanner(System.in);
         System.out.println("Please, input word:");
         String name = console.nextLine();
@@ -16,7 +18,7 @@ public class Task1 {
         int sum = 0;
         for (int i = 0; i < result.length; i++) {
             if (result[i] >= '0' && '9' >= result[i]) {
-                sum += result[i] -'0';
+                sum += result[i] - '0';
             }
         }
         System.out.println("Sum = " + sum);
